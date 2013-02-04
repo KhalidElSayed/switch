@@ -1,16 +1,27 @@
+#unnecessary output files.
 bin/
 gen/
 out/
 obj/
-local.properties
-proguard.cfg
-.DS_Store
-*.iws
-*.~
-*.keystore
-lint.xml
 target/
 classes/
 gen*
-.idea
 tmp/
+
+#android related files.
+local.properties
+proguard.cfg
+*.keystore
+lint.xml
+
+#mac stuff.
+.DS_Store
+
+#idea ignores.
+idea/
+*.ipr
+*.iws
+*.iml
+
+#general text editor ignores.
+*.~
