@@ -3,6 +3,19 @@ Switch (Android)
 
 Simple backwards implementation of the Android switch button.
 
+Status
+------
+
+This a very early version of the library. Extensive testing hasn't been completed yet and there's a few items missing that should be available.
+
+TODO
+----
+
+* Add support for a SwitchPreference
+* Proper unit testing
+* Proper support for themes and extending the styles
+* Proper documentation
+
 License
 -------
 
