@@ -1,0 +1,16 @@
+bin/
+gen/
+out/
+obj/
+local.properties
+proguard.cfg
+.DS_Store
+*.iws
+*.~
+*.keystore
+lint.xml
+target/
+classes/
+gen*
+.idea
+tmp/
