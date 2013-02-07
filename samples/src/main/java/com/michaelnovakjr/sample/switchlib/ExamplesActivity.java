@@ -16,7 +16,10 @@
 package com.michaelnovakjr.sample.switchlib;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.CompoundButton;
 
 import com.michaelnovakjr.switchlib.Switch;
@@ -33,6 +36,15 @@ public class ExamplesActivity extends Activity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
+            }
+        });
+
+        Button settingsButton = (Button) findViewById(R.id.launch_settings_btn);
+        settingsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ExamplesActivity.this, SettingsActivity.class);
+                startActivity(intent);
             }
         });
     }

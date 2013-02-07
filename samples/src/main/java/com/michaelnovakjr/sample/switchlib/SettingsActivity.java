@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
 /*
  * Copyright 2013 Michael Novak <michael.novakjr@gmail.com>
  *
@@ -15,10 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
--->
-<resources>
-  <!-- Sample application launcher label. -->
-  <string name="app_name">Switch Samples</string>
+package com.michaelnovakjr.sample.switchlib;
 
-  <string name="launch_settings_label">Launch Settings</string>
-</resources>
+import android.os.Bundle;
+import android.preference.PreferenceActivity;
+
+@SuppressWarnings("deprecation")
+public class SettingsActivity extends PreferenceActivity {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        addPreferencesFromResource(R.xml.preferences);
+    }
+}

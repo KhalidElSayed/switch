@@ -40,6 +40,16 @@
     <item name="switchPadding">16dip</item>
   </style>
 
+  <style name="SwitchPreference">
+    <item name="android:widgetLayout">@layout/preference_widget_switch</item>
+    <item name="switchTextOn">@string/capital_on</item>
+    <item name="switchTextOff">@string/capital_off</item>
+  </style>
+
+  <style name="SwitchPreference.Light">
+    <item name="android:widgetLayout">@layout/preference_widget_switch_light</item>
+  </style>
+
   <style name="TextAppearance.Switch" parent="@style/TextAppearance">
     <!-- Switch thumb asset presents a dark background. -->
     <item name="textColor">@color/secondary_text_holo_dark</item>

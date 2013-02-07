@@ -20,4 +20,7 @@
 <resources>
   <string name="capital_on">ON</string>
   <string name="capital_off">OFF</string>
+
+  <string name="preference_sample_title">Sample Switch</string>
+  <string name="preference_sample_summary">This is a sample switch</string>
 </resources>

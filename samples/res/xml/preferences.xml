@@ -16,9 +16,9 @@
  * limitations under the License.
  */
 -->
-<resources>
-  <!-- Sample application launcher label. -->
-  <string name="app_name">Switch Samples</string>
-
-  <string name="launch_settings_label">Launch Settings</string>
-</resources>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <com.michaelnovakjr.switchlib.SwitchPreference
+    android:key="switch_preference_example"
+    android:title="@string/preference_sample_title"
+    android:summary="@string/preference_sample_summary" />
+</PreferenceScreen>

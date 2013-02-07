@@ -2,6 +2,7 @@
 <!--
 /*
  * Copyright 2013 Michael Novak <michael.novakjr@gmail.com>
+ * Copyright (C) 2010 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,9 +17,11 @@
  * limitations under the License.
  */
 -->
-<resources>
-  <!-- Sample application launcher label. -->
-  <string name="app_name">Switch Samples</string>
-
-  <string name="launch_settings_label">Launch Settings</string>
-</resources>
+<com.michaelnovakjr.switchlib.Switch xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/switchWidget"
+        style="@style/SwitchHolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dip"
+        android:focusable="false" />
