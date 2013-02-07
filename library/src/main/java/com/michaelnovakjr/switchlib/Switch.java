@@ -68,6 +68,8 @@ import com.michaelnovakjr.switchlib.text.TransformationMethod2;
  * @attr ref android.R.styleable#Switch_track
  */
 public class Switch extends CompoundButton {
+    public static final int MEASURED_SIZE_MASK_COMPAT = 16777215;
+
     private static final int TOUCH_MODE_IDLE = 0;
     private static final int TOUCH_MODE_DOWN = 1;
     private static final int TOUCH_MODE_DRAGGING = 2;
@@ -501,7 +503,7 @@ public class Switch extends CompoundButton {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         final int measuredHeight = getMeasuredHeight();
         if (measuredHeight < switchHeight) {
-            setMeasuredDimension(getMeasuredWidthAndState(), switchHeight);
+            setMeasuredDimension(getMeasuredWidth(), switchHeight);
         }
     }
 

@@ -17,7 +17,7 @@
 */
 -->
 <resources>
-  <style name="SampleTheme" parent="@android:style/Theme.Light">
+  <style name="SampleTheme" parent="@android:style/Theme.Holo.Light">
     <item name="switchStyle">@style/SwitchHolo</item>
     <item name="switchPreferenceStyle">@style/SwitchPreference.Light</item>
   </style>
