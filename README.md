@@ -11,7 +11,6 @@ This a very early version of the library. Extensive testing hasn't been complete
 TODO
 ----
 
-* Add support for a SwitchPreference
 * Proper unit testing
 * Proper support for themes and extending the styles
 * Proper documentation
