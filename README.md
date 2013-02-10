@@ -3,6 +3,19 @@ Switch (Android)
 
 Simple backwards implementation of the Android switch button.
 
+Include the following to use the library with Maven.
+
+```xml
+<dependency>
+    <groupId>co.novie</groupId>
+    <artifactId>switch</artifactId>
+    <version>0.3.0</version>
+    <type>apklib</type>
+</dependency>
+```
+
+The library is also available via direct download on the downloads page.
+
 Status
 ------
 
@@ -14,6 +27,11 @@ TODO
 * Proper unit testing
 * Proper support for themes and extending the styles
 * Proper documentation
+
+Credits
+-------
+
+Sample project launcher icon built from [Android Icons][1]
 
 License
 -------
@@ -33,3 +51,4 @@ License
     See the License for the specific language governing permissions and
     limitations under the License.
 
+[1]: http://androidicons.com
