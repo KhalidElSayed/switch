@@ -18,7 +18,7 @@ TODO
 License
 -------
 
-    Copyright 2013 Michael Novak <michael.novakjr@gmail.com>
+    Copyright 2013 Michael Novak <m@novie.co>
     Copyright 2010 The Android Open Source Project
 
     Licensed under the Apache License, Version 2.0 (the "License");

@@ -1,205 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright 2013 Michael Novak <m@novie.co>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.michaelnovakjr</groupId>
-  <artifactId>parent</artifactId>
-  <packaging>pom</packaging>
-  <version>0.2.1</version>
+    <groupId>co.novie</groupId>
+    <artifactId>parent</artifactId>
+    <packaging>pom</packaging>
+    <version>0.2.1</version>
 
-  <name>Switch (Parent)</name>
-  <description>Backwards compatible version of the Android switch control.</description>
-  <url>http://michaelnovak.info</url>
-  <inceptionYear>2013</inceptionYear>
+    <name>Switch (Parent)</name>
+    <description>Backwards compatible version of the Android switch control.</description>
+    <url>http://novie.co</url>
+    <inceptionYear>2013</inceptionYear>
 
-  <modules>
-    <module>library</module>
-    <module>samples</module>
-  </modules>
+    <modules>
+        <module>switch</module>
+        <module>samples</module>
+    </modules>
 
-  <scm>
-    <url>https://github.com/mrn/switch</url>
-    <connection>scm:git:git//github.com/mrn/switch.git</connection>
-    <developerConnection>scm:git:git@github.com/mrn/switch.git</developerConnection>
-  </scm>
+    <scm>
+        <url>https://github.com/mrn/switch</url>
+        <connection>scm:git:git//github.com/mrn/switch.git</connection>
+        <developerConnection>scm:git:git@github.com/mrn/switch.git</developerConnection>
+    </scm>
 
-  <repositories>
-    <repository>
-      <id>archiva.snapshots</id>
-      <name>Opoloo Archiva Snapshots</name>
-      <url>
-        http://ci.ny.opoloo.com:5000/archiva/repository/snapshots
-      </url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
+    <developers>
+        <developer>
+            <name>Michael Novak</name>
+            <email>m@novie.co</email>
+            <id>mrn</id>
+            <url>http://m.novie.co</url>
+            <timezone>-5</timezone>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
 
-  <developers>
-    <developer>
-      <name>Michael Novak</name>
-      <email>michael.novakjr@gmail.com</email>
-      <id>mrn</id>
-      <url>http://michaelnovak.info</url>
-      <timezone>-5</timezone>
-      <roles>
-        <role>developer</role>
-      </roles>
-    </developer>
-  </developers>
+    <licenses>
+        <license>
+            <name>Apache License Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
-  <licenses>
-    <license>
-      <name>Apache License Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
+    <organization>
+        <name>Michael Novak</name>
+        <url>http://m.novie.co</url>
+    </organization>
 
-  <organization>
-    <name>Michael Novak</name>
-    <url>http://michaelnovak.info</url>
-  </organization>
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/mrn/switch/issues</url>
+    </issueManagement>
 
-  <issueManagement>
-    <system>GitHub Issues</system>
-    <url>https://github.com/mrn/switch/issues</url>
-  </issueManagement>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.6</java.version>
 
-    <java.version>1.6</java.version>
+        <android.version>4.2_r1</android.version>
+        <android.platform>17</android.platform>
 
-    <android.version>4.2_r1</android.version>
-    <android.platform>17</android.platform>
+        <android-support.version>11</android-support.version>
+        <android-maven.version>3.3.2</android-maven.version>
 
-    <android-support.version>r7</android-support.version>
-    <android-maven.version>3.3.2</android-maven.version>
+        <junit.version>4.10</junit.version>
+    </properties>
 
-    <junit.version>4.10</junit.version>
-  </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>android</groupId>
+                <artifactId>android</artifactId>
+                <version>${android.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>android.support</groupId>
+                <artifactId>compatibility-v4</artifactId>
+                <version>${android.support.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>android</groupId>
-        <artifactId>android</artifactId>
-        <version>${android.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.android</groupId>
-        <artifactId>support-v4</artifactId>
-        <version>${android-support.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>${junit.version}</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-
-  <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>2.5</version>
-          <configuration>
-            <source>${java.version}</source>
-            <target>${java.version}</target>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-          <artifactId>android-maven-plugin</artifactId>
-          <version>3.3.2</version>
-          <configuration>
-            <sdk>
-              <platform>${android.platform}</platform>
-            </sdk>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-javadoc-plugin</artifactId>
-          <version>2.8</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-checkstyle-plugin</artifactId>
-          <version>2.9.1</version>
-          <configuration>
-            <failsOnError>true</failsOnError>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-site-plugins</artifactId>
-          <version>3.0</version>
-          <configuration>
-            <skip>true</skip>
-          </configuration>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-release-plugin</artifactId>
-        <version>2.2.2</version>
-        <configuration>
-          <autoVersionSubmodules>true</autoVersionSubmodules>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>com.github.github</groupId>
-        <artifactId>site-maven-plugin</artifactId>
-        <version>0.5</version>
-        <executions>
-          <execution>
-            <phase>site</phase>
-            <goals>
-              <goal>site</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <message>Creating site for ${project.version}</message>
-          <outputDirectory>website</outputDirectory>
-        </configuration>
-      </plugin>
-    </plugins>
-    <extensions>
-      <extension>
-        <groupId>org.apache.maven.wagon</groupId>
-        <artifactId>wagon-webdav</artifactId>
-        <version>1.0-beta-2</version>
-      </extension>
-    </extensions>
-  </build>
-  <distributionManagement>
-    <repository>
-      <id>archiva.internal</id>
-      <name>Internal Release Repository</name>
-      <url>
-        dav:http://ci.ny.opoloo.com:5000/archiva/repository/internal/
-      </url>
-    </repository>
-    <snapshotRepository>
-      <id>archiva.snapshots</id>
-      <name>Internal Snapshot Repository</name>
-      <url>
-        dav:http://ci.ny.opoloo.com:5000/archiva/repository/snapshots/
-      </url>
-    </snapshotRepository>
-  </distributionManagement>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>2.5</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                    <artifactId>android-maven-plugin</artifactId>
+                    <version>3.3.2</version>
+                    <configuration>
+                        <sdk>
+                            <platform>${android.platform}</platform>
+                        </sdk>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>2.8</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-checkstyle-plugin</artifactId>
+                    <version>2.9.1</version>
+                    <configuration>
+                        <failsOnError>true</failsOnError>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugins</artifactId>
+                    <version>3.0</version>
+                    <configuration>
+                        <skip>true</skip>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.2.2</version>
+                <configuration>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.github</groupId>
+                <artifactId>site-maven-plugin</artifactId>
+                <version>0.5</version>
+                <executions>
+                    <execution>
+                        <phase>site</phase>
+                        <goals>
+                            <goal>site</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <message>Creating site for ${project.version}</message>
+                    <outputDirectory>website</outputDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
+
