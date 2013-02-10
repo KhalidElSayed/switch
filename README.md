@@ -14,7 +14,7 @@ Include the following to use the library with Maven.
 </dependency>
 ```
 
-The library is also available via direct download on the downloads page.
+The library is also available via direct download [here][2]
 
 Status
 ------
@@ -52,3 +52,4 @@ License
     limitations under the License.
 
 [1]: http://androidicons.com
+[2]: https://s3.amazonaws.com/michaelnovakjr/switch-0.3.0.zip
