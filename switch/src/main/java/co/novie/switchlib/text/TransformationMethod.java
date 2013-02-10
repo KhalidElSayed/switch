@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.michaelnovakjr.switchlib.text;
+package co.novie.switchlib.text;
 
 import android.graphics.Rect;
 import android.view.View;

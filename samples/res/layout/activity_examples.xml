@@ -22,7 +22,7 @@
     android:layout_height="match_parent"
     android:padding="40dp">
 
-  <com.michaelnovakjr.switchlib.Switch
+  <co.novie.switchlib.Switch
     style="@style/SwitchHolo.Light"
     android:id="@+id/sample_switch"
     android:layout_width="wrap_content"

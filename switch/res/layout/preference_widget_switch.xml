@@ -17,7 +17,7 @@
  * limitations under the License.
  */
 -->
-<com.michaelnovakjr.switchlib.Switch xmlns:android="http://schemas.android.com/apk/res/android"
+<co.novie.switchlib.Switch xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/switchWidget"
         style="@style/SwitchHolo"
         android:layout_width="wrap_content"

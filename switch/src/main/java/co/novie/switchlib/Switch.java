@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.michaelnovakjr.switchlib;
+package co.novie.switchlib;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -40,8 +40,8 @@ import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.CompoundButton;
 
-import com.michaelnovakjr.switchlib.text.AllCapsTransformationMethod;
-import com.michaelnovakjr.switchlib.text.TransformationMethod2;
+import co.novie.switchlib.text.AllCapsTransformationMethod;
+import co.novie.switchlib.text.TransformationMethod2;
 
 /**
  * A Switch is a two-state toggle switch widget that can select between two

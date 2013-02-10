@@ -1,4 +1,4 @@
-package com.michaelnovakjr.switchlib;
+package co.novie.switchlib;
 
 import android.content.Context;
 import android.content.res.TypedArray;

@@ -23,7 +23,7 @@
     <groupId>co.novie</groupId>
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
-    <version>0.2.1</version>
+    <version>0.3.0</version>
 
     <name>Switch (Parent)</name>
     <description>Backwards compatible version of the Android switch control.</description>
@@ -97,7 +97,7 @@
             <dependency>
                 <groupId>android.support</groupId>
                 <artifactId>compatibility-v4</artifactId>
-                <version>${android.support.version}</version>
+                <version>${android-support.version}</version>
             </dependency>
             <dependency>
                 <groupId>junit</groupId>
