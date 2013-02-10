@@ -25,3 +25,6 @@ idea/
 
 #general text editor ignores.
 *.~
+
+#shell scripts
+*.sh
